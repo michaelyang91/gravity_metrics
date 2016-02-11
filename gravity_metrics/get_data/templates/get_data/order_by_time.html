@@ -1,0 +1,7 @@
+<!-- Currently it's just ordered by auto-generated IDs of objects, not by the timestamps or device. Must use more Python or Django QuerySet API -->
+
+<ul>
+{% for a in delta_by_timestamp %}
+	<li>DEVICE {{ a.device }} : {{ a.delta }} at {{ a.timestamp }}</li>
+{% endfor %}
+</ul>

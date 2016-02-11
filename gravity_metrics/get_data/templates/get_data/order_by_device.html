@@ -1,0 +1,6 @@
+<ul>
+{% for a in delta_by_device %}
+	<li>DEVICE {{ a.device }} : {{ a.delta }} at {{ a.timestamp }}</li>
+	<!-- If receiving Date object, convert by {{ a.time-in-int|date:"c" }}-->
+{% endfor %}
+</ul>
